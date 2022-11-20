@@ -21,3 +21,7 @@ spring:
           uri: lb://marcaReloj-service
           predicates:
             - Path=/marcaReloj/**
+        - id: justificativo-service
+          uri: lb://justificativo-service
+          predicates:
+            - Path=/justificativo-service/**
