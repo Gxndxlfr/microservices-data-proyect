@@ -33,3 +33,15 @@ spring:
           uri: lb://autorizacion-service
           predicates:
             - Path=/autorizacion/**
+        - id: asistencia-service
+          uri: lb://asistencia-service
+          predicates:
+            - Path=/asistencia/**
+        - id: inasistencia-service
+          uri: lb://inasistencia-service
+          predicates:
+            - Path=/inasistencia/**
+        - id: planilla-service
+          uri: lb://planilla-service
+          predicates:
+            - Path=/planilla/**
